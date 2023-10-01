@@ -57,8 +57,7 @@ class ProductResource extends Resource
                                 Forms\Components\TextInput::make('slug')
                                     ->disabled()
                                     ->dehydrated()
-                                    ->required()
-                                    ->unique(Product::class, 'slug', ignoreRecord: true),
+                                    ->required(),
 
                                 Forms\Components\MarkdownEditor::make('description')
                                     ->columnSpan('full'),

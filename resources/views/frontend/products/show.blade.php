@@ -2,6 +2,11 @@
 
 @section('title', $product->name)
 @section('content')
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPQP58SM"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <!--product details start-->
     <div class="product_details" style="padding-top:120px;">
         <div class="container">

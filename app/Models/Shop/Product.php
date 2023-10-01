@@ -40,14 +40,14 @@ class Product extends Model implements HasMedia
         return $this->belongsToMany(Category::class, 'shop_category_product', 'shop_product_id', 'shop_category_id')->withTimestamps();
     }
 
-    public function reasons(): BelongsToMany
+    public function reasons()
     {
-        return $this->belongsToMany(Reason::class, 'shop_category_product', 'shop_product_id', 'shop_category_id')->withTimestamps();
+        return $this->belongsToMany(Reason::class, 'shop_product_reason', 'shop_product_id', 'reason_id')->withTimestamps();
     }
 
-    public function compositions(): BelongsToMany
+    public function compositions()
     {
-        return $this->belongsToMany(ProductComposition::class, 'shop_category_product', 'shop_product_id', 'shop_category_id')->withTimestamps();
+        return $this->belongsToMany(ProductComposition::class, 'shop_product_composition', 'shop_product_id', 'product_composition_id')->withTimestamps();
     }
 
     public function comments(): MorphMany

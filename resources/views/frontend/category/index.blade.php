@@ -2,7 +2,10 @@
 @section('title', 'Tort Kateqoriyaları')
 
 @section('content')
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPQP58SM"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!--breadcrumbs area start-->
     <div class="breadcrumbs_area">
         <div class="container">
@@ -40,7 +43,7 @@
                                                 <a class="primary_img"
                                                    href="{{ route('categoryShow' , $category->id) }}"><img
                                                         src="{{ asset('storage/'.$category->image) }}" alt=""></a>
-                                            
+
                                                 <div class="tag_cate" style="text-align: center;">
                                                     <a href="{{ route('categoryShow' , $category->id) }}">{{ $category->name }}</a>
                                                 </div>

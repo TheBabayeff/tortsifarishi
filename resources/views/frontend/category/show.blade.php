@@ -2,6 +2,10 @@
 @section('title', 'Tortlar')
 
 @section('content')
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPQP58SM"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!--breadcrumbs area start-->
     <div class="breadcrumbs_area">
         <div class="container">
@@ -9,7 +13,7 @@
                 <div class="col-12">
                     <div class="breadcrumb_content">
                         <ul>
-                            <li><a href="index.html">home</a></li>
+                            <li><a href="{{ route('welcome') }}">home</a></li>
                             <li>></li>
                             <li>shop</li>
                         </ul>
@@ -67,7 +71,7 @@
                                 @empty
                                     <h3 style="text-align: center">Bu kateqoriyada məhsul tapılmadı</h3>
 
-                                    
+
                                 @endforelse
                             </div>
                         </div>

@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SonnaCake  @yield('title')</title>
-    <meta name="description" content="">
+    <title>Tort Sifarishi  @yield('title')</title>
+    <meta name="description" content="Tort Sifarishi - @yield('description')">
+    <meta name="keywords" content="Tort Sifarishi , tort , tortlar, zakaz tortov ,zakazat tort , ad gunu,birthday cake , ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
 
     <!-- CSS
     ========================= -->
@@ -21,6 +22,14 @@
 
     <!--modernizr min js here-->
     <script src="{{ asset('assets/js/vendor/modernizr-3.7.1.min.js') }}"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WPQP58SM');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body >

@@ -17,7 +17,7 @@ return new class() extends Migration
             $table->id();
             $table->string('name');
             $table->foreignId('parent_id')->nullable()->constrained('shop_categories')->cascadeOnDelete();
-            $table->string('slug')->unique()->nullable();
+            $table->string('slug')->nullable();
             $table->foreignId('product_reasons')->nullable()->constrained('reasons')->cascadeOnDelete();
             $table->foreignId('product_compositions')->nullable()->constrained('product_compositions')->cascadeOnDelete();
             $table->string('preview_image')->nullable();
